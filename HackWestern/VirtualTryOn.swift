@@ -7,27 +7,31 @@
 
 import SwiftUI
 
+struct HostingWindowFinder: UIViewRepresentable{
+    var callback: (UIWindow?) -> ()
+    
+    func makeUIView(context: Context) -> UIView {
+        let view = UIView()
+        DispatchQueue.main.async{ [weak view] in
+            self.callback(view?.window)
+        }
+        return view
+    }
+}
+
 struct VirtualTryOn: View {
     var body: some View {
-        VStack {
-            Text("Virtual Try-On")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding()
-
-            // You can add more UI elements for the virtual try-on here
-            Text("Try our AI Glasses Reccomender")
-                .font(.title2)
-                .foregroundColor(.gray)
-                .padding()
-
-            Image(systemName: "eye")
-                .font(.system(size: 100))
-                .foregroundColor(Color(hue: 0.614, saturation: 0.403, brightness: 1.0))
-                .padding()
+        Button(action: {
+            Unity.shared.show()
+        }, label: {
+            Text("Try On!")
+        })
+    };.background(
+        HostingWindowFinder {
+            window in
+            Unity.shared.setHostMainWindow(window)
         }
-        .navigationBarTitle("Virtual Try-On", displayMode: .inline)
-    }
+    )
 }
 
 #Preview {

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		214CEB69DD01FFA985077B56 /* Pods_HackWesternTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BA52749BDCCADA82889908 /* Pods_HackWesternTests.framework */; };
 		4A37EDE9D0912274A42D8582 /* Pods_HackWestern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56078FAD5D798CA925F9794 /* Pods_HackWestern.framework */; };
+		4E64D7702CFC93FB002E85E3 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E64D75D2CFC87DE002E85E3 /* UnityFramework.framework */; };
+		4E64D7712CFC93FB002E85E3 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E64D75D2CFC87DE002E85E3 /* UnityFramework.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		77EF8CD72688689F409CEA7F /* Pods_HackWestern_HackWesternUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EF1E76795F0EC9B0E928F2 /* Pods_HackWestern_HackWesternUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4E64D7722CFC93FB002E85E3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E64D7712CFC93FB002E85E3 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1AE391F2F969C0912BA3E7F3 /* Pods-HackWestern.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern.debug.xcconfig"; path = "Target Support Files/Pods-HackWestern/Pods-HackWestern.debug.xcconfig"; sourceTree = "<group>"; };
 		389F82F91CC69AD064523288 /* Pods-HackWestern-HackWesternUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern-HackWesternUITests.debug.xcconfig"; path = "Target Support Files/Pods-HackWestern-HackWesternUITests/Pods-HackWestern-HackWesternUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +53,8 @@
 		4E49EC972CFB18C600287391 /* HackWestern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackWestern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E49ECA72CFB18C700287391 /* HackWesternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWesternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E49ECB12CFB18C700287391 /* HackWesternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWesternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E64D75D2CFC87DE002E85E3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E64D7612CFC8818002E85E3 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "/Users/kirby/Documents/hackathonn/Unity-iPhone.xcodeproj"; sourceTree = "<absolute>"; };
 		A3EF1E76795F0EC9B0E928F2 /* Pods_HackWestern_HackWesternUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackWestern_HackWesternUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E39129244EA6ACE10FA38A /* Pods-HackWesternTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWesternTests.release.xcconfig"; path = "Target Support Files/Pods-HackWesternTests/Pods-HackWesternTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAF4635586F86DD70DF7AB7A /* Pods-HackWestern.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern.release.xcconfig"; path = "Target Support Files/Pods-HackWestern/Pods-HackWestern.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A37EDE9D0912274A42D8582 /* Pods_HackWestern.framework in Frameworks */,
+				4E64D7702CFC93FB002E85E3 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +131,7 @@
 				4E49EC982CFB18C600287391 /* Products */,
 				15C7F51FE785FCB51BFA7AFC /* Pods */,
 				E2D70B38430C24DBCCDACE25 /* Frameworks */,
+				4E64D7612CFC8818002E85E3 /* Unity-iPhone.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,9 +145,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4E64D7622CFC8818002E85E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		E2D70B38430C24DBCCDACE25 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E64D75D2CFC87DE002E85E3 /* UnityFramework.framework */,
 				F56078FAD5D798CA925F9794 /* Pods_HackWestern.framework */,
 				A3EF1E76795F0EC9B0E928F2 /* Pods_HackWestern_HackWesternUITests.framework */,
 				E1BA52749BDCCADA82889908 /* Pods_HackWesternTests.framework */,
@@ -146,6 +174,7 @@
 				4E49EC932CFB18C600287391 /* Sources */,
 				4E49EC942CFB18C600287391 /* Frameworks */,
 				4E49EC952CFB18C600287391 /* Resources */,
+				4E64D7722CFC93FB002E85E3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +267,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4E49EC982CFB18C600287391 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4E64D7622CFC8818002E85E3 /* Products */;
+					ProjectRef = 4E64D7612CFC8818002E85E3 /* Unity-iPhone.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4E49EC962CFB18C600287391 /* HackWestern */,
