@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		214CEB69DD01FFA985077B56 /* Pods_HackWesternTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1BA52749BDCCADA82889908 /* Pods_HackWesternTests.framework */; };
+		4A37EDE9D0912274A42D8582 /* Pods_HackWestern.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F56078FAD5D798CA925F9794 /* Pods_HackWestern.framework */; };
+		77EF8CD72688689F409CEA7F /* Pods_HackWestern_HackWesternUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3EF1E76795F0EC9B0E928F2 /* Pods_HackWestern_HackWesternUITests.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		4E49ECA82CFB18C700287391 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +30,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AE391F2F969C0912BA3E7F3 /* Pods-HackWestern.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern.debug.xcconfig"; path = "Target Support Files/Pods-HackWestern/Pods-HackWestern.debug.xcconfig"; sourceTree = "<group>"; };
+		389F82F91CC69AD064523288 /* Pods-HackWestern-HackWesternUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern-HackWesternUITests.debug.xcconfig"; path = "Target Support Files/Pods-HackWestern-HackWesternUITests/Pods-HackWestern-HackWesternUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B04AED8615A6625CF25CB95 /* Pods-HackWesternTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWesternTests.debug.xcconfig"; path = "Target Support Files/Pods-HackWesternTests/Pods-HackWesternTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F367D62B4A64850A031FFCA /* Pods-HackWestern-HackWesternUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern-HackWesternUITests.release.xcconfig"; path = "Target Support Files/Pods-HackWestern-HackWesternUITests/Pods-HackWestern-HackWesternUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4E49EC972CFB18C600287391 /* HackWestern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackWestern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E49ECA72CFB18C700287391 /* HackWesternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWesternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E49ECB12CFB18C700287391 /* HackWesternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWesternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EF1E76795F0EC9B0E928F2 /* Pods_HackWestern_HackWesternUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackWestern_HackWesternUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E39129244EA6ACE10FA38A /* Pods-HackWesternTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWesternTests.release.xcconfig"; path = "Target Support Files/Pods-HackWesternTests/Pods-HackWesternTests.release.xcconfig"; sourceTree = "<group>"; };
+		AAF4635586F86DD70DF7AB7A /* Pods-HackWestern.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern.release.xcconfig"; path = "Target Support Files/Pods-HackWestern/Pods-HackWestern.release.xcconfig"; sourceTree = "<group>"; };
+		E1BA52749BDCCADA82889908 /* Pods_HackWesternTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackWesternTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56078FAD5D798CA925F9794 /* Pods_HackWestern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackWestern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A37EDE9D0912274A42D8582 /* Pods_HackWestern.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214CEB69DD01FFA985077B56 /* Pods_HackWesternTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +83,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77EF8CD72688689F409CEA7F /* Pods_HackWestern_HackWesternUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15C7F51FE785FCB51BFA7AFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AE391F2F969C0912BA3E7F3 /* Pods-HackWestern.debug.xcconfig */,
+				AAF4635586F86DD70DF7AB7A /* Pods-HackWestern.release.xcconfig */,
+				389F82F91CC69AD064523288 /* Pods-HackWestern-HackWesternUITests.debug.xcconfig */,
+				3F367D62B4A64850A031FFCA /* Pods-HackWestern-HackWesternUITests.release.xcconfig */,
+				3B04AED8615A6625CF25CB95 /* Pods-HackWesternTests.debug.xcconfig */,
+				A5E39129244EA6ACE10FA38A /* Pods-HackWesternTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4E49EC8E2CFB18C600287391 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +110,8 @@
 				4E49ECAA2CFB18C700287391 /* HackWesternTests */,
 				4E49ECB42CFB18C700287391 /* HackWesternUITests */,
 				4E49EC982CFB18C600287391 /* Products */,
+				15C7F51FE785FCB51BFA7AFC /* Pods */,
+				E2D70B38430C24DBCCDACE25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +125,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E2D70B38430C24DBCCDACE25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F56078FAD5D798CA925F9794 /* Pods_HackWestern.framework */,
+				A3EF1E76795F0EC9B0E928F2 /* Pods_HackWestern_HackWesternUITests.framework */,
+				E1BA52749BDCCADA82889908 /* Pods_HackWesternTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,6 +142,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E49ECBB2CFB18C700287391 /* Build configuration list for PBXNativeTarget "HackWestern" */;
 			buildPhases = (
+				BA2072D1FEB76BC351AD4D9A /* [CP] Check Pods Manifest.lock */,
 				4E49EC932CFB18C600287391 /* Sources */,
 				4E49EC942CFB18C600287391 /* Frameworks */,
 				4E49EC952CFB18C600287391 /* Resources */,
@@ -111,8 +155,6 @@
 				4E49EC992CFB18C600287391 /* HackWestern */,
 			);
 			name = HackWestern;
-			packageProductDependencies = (
-			);
 			productName = HackWestern;
 			productReference = 4E49EC972CFB18C600287391 /* HackWestern.app */;
 			productType = "com.apple.product-type.application";
@@ -121,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E49ECBE2CFB18C700287391 /* Build configuration list for PBXNativeTarget "HackWesternTests" */;
 			buildPhases = (
+				2732D372865D7B63CBF2F3BF /* [CP] Check Pods Manifest.lock */,
 				4E49ECA32CFB18C700287391 /* Sources */,
 				4E49ECA42CFB18C700287391 /* Frameworks */,
 				4E49ECA52CFB18C700287391 /* Resources */,
@@ -134,8 +177,6 @@
 				4E49ECAA2CFB18C700287391 /* HackWesternTests */,
 			);
 			name = HackWesternTests;
-			packageProductDependencies = (
-			);
 			productName = HackWesternTests;
 			productReference = 4E49ECA72CFB18C700287391 /* HackWesternTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -144,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E49ECC12CFB18C700287391 /* Build configuration list for PBXNativeTarget "HackWesternUITests" */;
 			buildPhases = (
+				E3F2E091E1B6E6592DACDEB7 /* [CP] Check Pods Manifest.lock */,
 				4E49ECAD2CFB18C700287391 /* Sources */,
 				4E49ECAE2CFB18C700287391 /* Frameworks */,
 				4E49ECAF2CFB18C700287391 /* Resources */,
@@ -157,8 +199,6 @@
 				4E49ECB42CFB18C700287391 /* HackWesternUITests */,
 			);
 			name = HackWesternUITests;
-			packageProductDependencies = (
-			);
 			productName = HackWesternUITests;
 			productReference = 4E49ECB12CFB18C700287391 /* HackWesternUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -230,6 +270,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2732D372865D7B63CBF2F3BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackWesternTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA2072D1FEB76BC351AD4D9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackWestern-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3F2E091E1B6E6592DACDEB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HackWestern-HackWesternUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E49EC932CFB18C600287391 /* Sources */ = {
@@ -390,6 +499,7 @@
 		};
 		4E49ECBC2CFB18C700287391 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE391F2F969C0912BA3E7F3 /* Pods-HackWestern.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,6 +528,7 @@
 		};
 		4E49ECBD2CFB18C700287391 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAF4635586F86DD70DF7AB7A /* Pods-HackWestern.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -446,6 +557,7 @@
 		};
 		4E49ECBF2CFB18C700287391 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B04AED8615A6625CF25CB95 /* Pods-HackWesternTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +576,7 @@
 		};
 		4E49ECC02CFB18C700287391 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E39129244EA6ACE10FA38A /* Pods-HackWesternTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +595,7 @@
 		};
 		4E49ECC22CFB18C700287391 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 389F82F91CC69AD064523288 /* Pods-HackWestern-HackWesternUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -498,6 +612,7 @@
 		};
 		4E49ECC32CFB18C700287391 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F367D62B4A64850A031FFCA /* Pods-HackWestern-HackWesternUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

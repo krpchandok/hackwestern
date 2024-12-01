@@ -12,6 +12,10 @@ struct HackWesternApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            MarketPlace()
+            VirtualTryOn()
+            ScanPrescription()
+            UserProfile()
         }
     }
 }

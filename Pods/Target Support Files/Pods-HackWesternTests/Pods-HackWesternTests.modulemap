@@ -1,0 +1,6 @@
+framework module Pods_HackWesternTests {
+  umbrella header "Pods-HackWesternTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
