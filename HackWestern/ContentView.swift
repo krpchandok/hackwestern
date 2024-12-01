@@ -1,97 +1,71 @@
-
-//  ContentView.swift
-//  HackWestern
-//
-//  Created by Kirpa Chandok on 2024-11-30.
-//
-
-//
-//  ContentView.swift
-//  HackWestern
-//
-//  Created by Kirpa Chandok on 2024-11-30.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(spacing: 20) {
-                    // Hero Section
-                    VStack {
-                        Text("Find Your Perfect Glasses")
-                            .font(.largeTitle)
-                            .fontWeight(.bold)
-                            .multilineTextAlignment(.center)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity)
-                            .foregroundColor(.white)
-                            .padding(.top, 10.0)
-                            .padding(.horizontal)
-                            .background(Color(hue: 0.615, saturation: 0.206, brightness: 1.0))
-                            .cornerRadius(10)
-                            .padding(.horizontal)
-                        
-                    }
-                    .frame(maxWidth: .infinity)
-                    .background(Color(hue: 0.615, saturation: 0.206, brightness: 1.0))
+            VStack(spacing: 20) {
+                // Hero Section
+                ZStack(alignment: .top) {
+                    Image("headerBackground")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(height: 400) // Reduce height to fit content
+                        .clipped()
 
-                    // Features Section
-                    VStack(alignment: .leading) {
-                        Text("Features")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                            .multilineTextAlignment(.center)
-                            .padding(.bottom, 10)
-                        
-                        HStack {
-                            NavigationLink(destination: VirtualTryOn()) {
-                                    FeatureItem(imageName: "eye-glasses", title: "Virtual Try-On")
-                            }
-                            NavigationLink(destination: UserProfile()) {
-                                FeatureItem(imageName: "lens", title: "Customize Profile")
-                            }
-                            NavigationLink(destination: MarketPlace()) {
-                                FeatureItem(imageName: "delivery-truck", title: "Online Shop")
-                            }
-                        }
-                    }
-                    .padding()
-
-                    // About Section
-                    VStack(alignment: .leading) {
-                        Text("About Us")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                            .padding(.bottom, 10)
-                        
-                        Text("At GlassesApp, we help you find the perfect pair of glasses that fit your style and needs. Our wide selection of frames and lenses ensures you'll find what you're looking for.")
-                            .padding(.bottom, 10)
-                    }
-                    .padding()
-
-                    // Contact Section
-                    VStack {
-                        Text("Get in Touch")
-                            .font(.title)
-                            .fontWeight(.semibold)
-                            .padding(.bottom, 10)
-
-                        Button(action: {
-                            // Action to contact
-                        }) {
-                            Text("Contact Us")
-                                .font(.headline)
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.blue)
-                                .cornerRadius(10)
-                        }
-                    }
-                    .padding()
-
+                    Text("Find Your Perfect Glasses with ClearSight AI")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .frame(maxWidth: .infinity)
+                        .foregroundColor(.white)
+                        .padding(.horizontal)
+                        .cornerRadius(10)
+                        .padding(.horizontal)
+                        .padding(.top, 30)
                 }
+
+                // Features Section
+                VStack {
+                    Text("Features")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        .padding(.top, 20)
+
+                    HStack {
+                        NavigationLink(destination: VirtualTryOn()) {
+                            FeatureItem(title: "Virtual Try-On")
+                        }
+                        NavigationLink(destination: UserProfile()) {
+                            FeatureItem(title: "Customize Profile")
+                        }
+                        NavigationLink(destination: MarketPlace()) {
+                            FeatureItem(title: "Online Market")
+                        }
+                        // New section for Insurance Information
+                        NavigationLink(destination: InsurancePage()) {
+                            FeatureItem(title: "Insurance Info")
+                        }
+                    }
+                }
+                .padding(.horizontal)
+
+                // Mascot Section
+                ZStack {
+                    Color.white
+                        .ignoresSafeArea()
+
+                    HStack {
+                        Image("MascotIcon")
+                            .resizable()
+                            .frame(width: 70, height: 70, alignment: .center)
+
+                        Text("Hey there! My name is Glint and I am here to make the process of finding glasses with your insurance provider flow seamlessly! Learn more about our features below!")
+                            .font(.subheadline)
+                    }
+                }
+
+                Spacer()
             }
             .navigationBarTitle("GlassesApp", displayMode: .inline)
         }
@@ -99,28 +73,25 @@ struct ContentView: View {
 }
 
 struct FeatureItem: View {
-    var imageName: String
     var title: String
 
     var body: some View {
         VStack {
-            Image(systemName: imageName)
-                .resizable()
-                .scaledToFit()
-                .frame(width: 60, height: 20)
-                .padding()
             Text(title)
                 .font(.headline)
                 .foregroundColor(.blue)
+                .padding() // Add padding to ensure text is not cut off
+                .frame(maxWidth: .infinity)
+                .background(Color.white)
+                .cornerRadius(10)
+                .shadow(radius: 5)
         }
-        .frame(maxWidth: .infinity)
-        .padding()
-        .background(Color.white)
-        .cornerRadius(10)
-        .shadow(radius: 5)
+        .frame(height: 120) // Ensure the box has enough height to accommodate the text
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

@@ -33,3 +33,4 @@ struct ScanPrescription: View {
 #Preview {
     ScanPrescription()
 }
+
