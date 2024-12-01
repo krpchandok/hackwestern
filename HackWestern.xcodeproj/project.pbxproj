@@ -54,7 +54,7 @@
 		4E49ECA72CFB18C700287391 /* HackWesternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWesternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E49ECB12CFB18C700287391 /* HackWesternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackWesternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E64D75D2CFC87DE002E85E3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4E64D7612CFC8818002E85E3 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "/Users/kirby/Documents/hackathonn/Unity-iPhone.xcodeproj"; sourceTree = "<absolute>"; };
+		4E64D7612CFC8818002E85E3 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "/Users/kirby/Desktop/hackydacky/HackWestern/HackWestern/Unity-iPhone.xcodeproj"; sourceTree = "<absolute>"; };
 		A3EF1E76795F0EC9B0E928F2 /* Pods_HackWestern_HackWesternUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HackWestern_HackWesternUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E39129244EA6ACE10FA38A /* Pods-HackWesternTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWesternTests.release.xcconfig"; path = "Target Support Files/Pods-HackWesternTests/Pods-HackWesternTests.release.xcconfig"; sourceTree = "<group>"; };
 		AAF4635586F86DD70DF7AB7A /* Pods-HackWestern.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HackWestern.release.xcconfig"; path = "Target Support Files/Pods-HackWestern/Pods-HackWestern.release.xcconfig"; sourceTree = "<group>"; };
@@ -131,7 +131,6 @@
 				4E49EC982CFB18C600287391 /* Products */,
 				15C7F51FE785FCB51BFA7AFC /* Pods */,
 				E2D70B38430C24DBCCDACE25 /* Frameworks */,
-				4E64D7612CFC8818002E85E3 /* Unity-iPhone.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,7 +144,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4E64D7622CFC8818002E85E3 /* Products */ = {
+		4E64D7AC2CFC9FAB002E85E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -269,7 +268,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4E64D7622CFC8818002E85E3 /* Products */;
+					ProductGroup = 4E64D7AC2CFC9FAB002E85E3 /* Products */;
 					ProjectRef = 4E64D7612CFC8818002E85E3 /* Unity-iPhone.xcodeproj */;
 				},
 			);
